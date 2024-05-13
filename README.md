@@ -1,97 +1,92 @@
 # ai_project_group_8
 A data analysis class project for Columbia University's AI bootcamp.
 
-Flow of the Narrative:
-Sector
-Geography
-Job Level
-Census -
-Focus on the Technology 
-* Education
-* Employment vs Unemployment Levels
-* Prophet Time Series Predictive Model
-    - Predict Education Requirements for next 5 years
-    - Predict Employment Requirement for next 5 years
+## "Project Title"
+<div align='center'>
+    <img src='....' height='300' title='AI Jobs'(image courtesy of....)' alt='an image of a ....'/>
 
+*AI Jobs*[^1]
 
+<div align='left'>
 
-
-Skills
-Education
-- Educations
-
-
-Explore Later
-- Manufacturing
-- More Breakdown for the Job Level than (Senior & Associate), Education, ML Job Skills
-
--
-
-
-Geography Wrap
-Job Skills
-- take all the items in the job_skills for every row, turn them into a list, concatinate the list
-- sort skills
-- print skills
-
-
-Job Skills
-
-Why pytorch is that so low
-Why is Tensorflow so low
-sql
-
-full stack 
-machine learning 
-javascrip, typescript, react,
-
-
-filter by machine learning
-
-git fetch
-
-git branch
-
-git checkout "branch name"
-
-git pull
-
-table top gamming and taught herself html
-
-Odele ReadMe
-
-**HTML Expert**
+## Project Team Members:
+* Coder
+* Manager
+* CoPilot
+* Storyteller
+* Euthusiasts 
 
 ## Table of Contents
 
 * [Overview](#overview)
-    * [The Assigment Was]
-2. [Execution](#execution)
 
+* [Execution](#execution)
+
+* [Summary](#analysis)
+
+* [References](#footnotes)
+
+## Overview 
+
+* Outline business landscape for project
+
+* Outline project ideation, team collaboration, data fetching, proposal, and thesis/hypothesis
+
+* Outline Software Version Control (GitHub)
+
+* Outline the narrative of the presentation, including data exploration, cleanup, transformatin, analysis, training, testing, and results:
+    * Job Sector
+    * Locatiions/Geography
+    * Job Levels/Education
+        * Census Data for Technology Careers
+        * Education Levels
+        * Employment vs Unemployment
+        * Prophet Time Series Predictive Model      
+    * Job Skills
+        * Why the following skills associated with AI/ML so low on the skill count: pytorch, TensorFlow
+        * Full stack AI approach includes: javascript, typescript, react.
+        * Javascript vs Python
+    * Further Analysis to explore later: Manufacturing, Job Level granularity, 
 
 ---
-
-## Overview
-
----
-
 ## Execution
 
-| How | We | Do[^1] |
-| ---:| --:-- | :-- |
+<div align='center'>
+
+### Coding Walkthrough
+<div align='left'>
+
+| Cell(s) | Notes |
+| ---: | :--- |
+| Job Sector | Findings are strongly supported with numbers and visualizations    |
+| Location/Geography  |  Write-up summarizes major findings and implications at a professional level   |
+| Job Levels/Education  |  Each question in the project proposal is answered with precise descriptions and findings 5 points   |
+| Job Skills |  Each question response is supported with a well-discerned statistical analysis from lessons, such as aggregation, correlation, comparison, summary statistics, sentiment analysis, and time series analysis   |
+
+<div align='center'>
+
+### Coding Visualization
+
+<img src='https://github.com/MxOdele/Python-Challenge-1/blob/c8ab265fb8983afef499c393ff33414b3369f1c0/Screenshots/01-Main-Menu.png' title='AI Skills' alt='A display of 6-8 AI related visualizations.'/>
+
+*AI Roles*
+
+<div align='left'>
 
 
-Overview
-...Alt Text for Descriptive Reader (ADA Compliance)
 
-Written In
+___
+## Summary
 
-Business Application/Usage
+## Resources
 
-Accessing the Notebook
 
-Execution / Breaking Down the Code
+https://www.statista.com/statistics/1365145/artificial-intelligence-market-size/
 
-Analysis
+https://hired.com/resources/articles/trends-software-engineer-specializations/
 
-Footnotes
+https://hired.com/blog/highlights/ceo-winter-2024-tech-hiring-trends-road-recovery/
+
+https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-in-2022-and-a-half-decade-in-review#review
+
+https://github.com/Crawnicles/Predicting-Salaries
