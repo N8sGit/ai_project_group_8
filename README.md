@@ -94,12 +94,11 @@ Investigated which skills were most in demand for AI jobs by using the list of k
 
 Performed analysis to determine the relative proportion of the job level required for AI positions to job level required for non-AI positions using the respective dataframe and calling the "job level" column. Investigated the difference in minimum years of experience between AI-related and general tech roles by parsing out years of experience from the posting and a regex heursitic to handle the repetition of certain text in the job description. Analyzed the national distribution of AI and Non_AI jobs by State using a list of State abbreviations and a get_location() function, as well as the proportional distribution of AI to non_AI jobs by State.
 
-**Accesing the System**
-
 ---
 ## Results
 
 ### Findings
+*AI Models Work
 
 *AI Sectors and Profits*
 
@@ -110,6 +109,8 @@ Performed analysis to determine the relative proportion of the job level require
     ![Profits by Sector]()
 
 *Tech Workplace Flexibility and Job Levels:*
+Analysis of  workplace flexibility in correlation job level showed 
+Postings for both associate and mid-senior level roles are listed predominantly as 'onsite' but both job levels offer flexibilty with >40% of total associate roles and >50% of mid-senior roles falling in the Remote-Hybrid category.
 
 * Job Level and Job Type patterns:
 
@@ -119,11 +120,7 @@ Performed analysis to determine the relative proportion of the job level require
 
 *US Census Predictions:* 
 
-* Percent in Tech Fields and No Education
-
-* Percent in Tech Fields and High School Education
-
-* Percent in Tech Fields and GED
+* Analysis showed a that although the percentage of the population earning a traditional Associates, Bachelors, or Masters Degree has remained steady, there has been an increase in the percentage of population exploring professional education opportunities similar to this AI Boot Camp. The correlation ratio between tech-related jobs and professional education was 1:0.997, which was one of the strongest correlations in the data. The growth in the population seeking alternative forms of education and the specific skillset required for AI jobs and other positions in the tech sector have both contributed to a national trend moving towards accelerated and flexibility learning options.
 
 * Percent in Tech Fields Professional Education
 
@@ -137,22 +134,38 @@ Performed analysis to determine the relative proportion of the job level require
 
 *AI vs Non-AI Software Developers:* 
 
+Analysis of the job market for developers based on the job level showed that the demand for Associate level positions was almost identity for AI and non-AI dataset (15% vs. 14%). Notably, the demand for Mid-Senior positions was slightly lower for AI positions, which was supported by additional analysis showing ML roles, on average, less years of experience.
+
+* The AI skills analysis resulted in Python the skill that is most desirable; however there was portion of the dataset that required ML experience but did not include Python as a required skill. The comparative bar chart for skills required for ML jobs versus skills required for non-ML job revealed in-demand software skills like Python, Java, AWS, Javascript, and SQL appeared at the top of both datasets. As previously stated, the demand for Python was slightly higher, but most skills shared between datasets appear with almost the same proportional frequency.
+
+    ![AI Skills Demand]() 
+
+    ![AI vs Non-AI Top 20 Skills]() 
+
+* The relative comparison of job postings with ML experience to the those without produced the following results: 10% of the postings in LinkeIn 90% of postings in the LinkedIn dataset included ML experienc, resulting in the 10% in the job 
+
 * Most AI jobs are in .... and require the foollowing skillset 
     
     ![Tech Jobs by US State]() -
     
     ![AI vs Non-AI Job Distribution]() 
 
-    ![AI Skills Demand]() 
+   
 
-    ![AI vs Non-AI Top 20 Skills]() 
+
 
 ### Lingering Questions
  * To explore later: AI in manufacturing jobs, more job level granularity.
+ 
+ Perhaps more interesting is that a fraction of job listings including machine learning do not also include python as an additional skill, as the number of counts for the python keyword is less than the counts for machine learning. This raises the question: do those roles including machine learning but excluding python have anything in common or special about them?
+
+For this query we specify a filter condition where we search for data items in the job skills column that have the keyword "machine learning" but not the keyword "python". [TO DO (maybe)]
 ___
 ## Limitations
 
-**US Census Predictions:** The classification of tech-related jobs was the closest representation to the ML workforce based on the needs of the project.
+**US Census Predictions:** The classification of tech-related jobs was the closest representation to the ML workforce based on the needs of the project. Supplemental data with a more granular subset of tech jobs related to AI would've contributed to the overall analysis of how jobs in that sector correlate to different aspects of employment and education.
+
+The data analysis of unemployment trends did yield an inverse relationship to the percentage of the population working in tech-related field ( 1:-0.908 correlation); however, these numbers were based on a rolling 5-year national average, and were not indicative of all the variables affecting the unemployment rates. Additional analysis into other unemployment factors would be required to draw more concrete conclusions about the relationship between tech jobs and unemployment.
 
 **AI vs Non-AI Software Developers:** The raw LinkedIn job postings dataset did not include a years of experience in an isolated, instead it was included in the job description. Given the irregularity of the summary texts, there was no guarantee all information was correctly extracted. 
 
