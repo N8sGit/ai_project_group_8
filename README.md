@@ -1,11 +1,11 @@
 # ai_project_group_8
 A data analysis class project for Columbia University's AI bootcamp.
 
-## "An Outlook on AI Jobs"
+## An Outlook on AI Jobs
 <div align='center'>
-    <img src='....' height='300' title='AI Jobs'(image courtesy of....)' alt='an image of a ....'/>
+    <img src='https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg' height='300' title='AI Jobs'(image courtesy of....)' alt='Image of computer screen with glasses on the mouse pad'/>
 
-*AI Jobs*[^1]
+*EDA on AI Jobs*[^1]
 
 <div align='left'>
 
@@ -56,6 +56,7 @@ We reviewed datasets that provided the most opportunity for a thorough explorati
 *   Maching Learning Job data: json
 * LinkedIn Job Postings for 2023: https://www.kaggle.com/datasets/joebeachcapital/linkedin-jobs
 * AI Companies and Profit by Sector for 2022: https://www.kaggle.com/datasets/hansrobertson/american-companies-profits-and-benefits-from-ai
+* AI Models Index: https://www.kaggle.com/datasets/manavgupta92/from-data-entry-to-ceo-the-ai-job-threat-index
 
 
 
@@ -69,6 +70,10 @@ We reviewed datasets that provided the most opportunity for a thorough explorati
 ---
 
 ## Methods 
+
+*AI Models*
+
+AI Jobs Index dataset was read into notebook to analyze the trends in AI model in comparison to the human workforce. Data was clean and grouped by Sector to calculate the proportion of Human Tasks to AI Models.
 
 *AI Sectors and Profits:*
 
@@ -98,21 +103,25 @@ Performed analysis to determine the relative proportion of the job level require
 ## Results
 
 ### Findings
-*AI Models Work
-
 *AI Sectors and Profits*
 
-* Technology as the primary AI sector / Manufacturing secondary:
+* Analysis of the number of companies and the respective profits showed that the tech sector had the most companies and the highest profit, justifying a deeper exploration into the tech field and AI trends.
 
     ![Number of Companies by Sector]()
 
     ![Profits by Sector]()
 
-*Tech Workplace Flexibility and Job Levels:*
-Analysis of  workplace flexibility in correlation job level showed 
-Postings for both associate and mid-senior level roles are listed predominantly as 'onsite' but both job levels offer flexibilty with >40% of total associate roles and >50% of mid-senior roles falling in the Remote-Hybrid category.
+*AI Models*
 
-* Job Level and Job Type patterns:
+* Analysis proportions of replaceable "Human Tasks" to "AI Models" revealed the increase in the workforce has resulted in 22% AI workload, meaning for every individual human task, there are 4-5 AI models being trained as replacements. This shift to a more technological landscape raises many questions while providing insight on future employment trends.
+
+     ![AI Workload BoxPlot]()
+
+*Tech Workplace Flexibility and Job Levels:*
+
+* Analysis of workplace flexibility in correlation job level showed that the majority of postings for both Associate and Mid-Senior level roles were listed as 'onsite'; however but both job levels offered flexibilty with >40% of the total Associate roles and >50% of Mid-Senior roles falling in the Remote-Hybrid category.
+
+* Findings also pointed to a preference for on-site, mid-senior level candidates for the United States, Canada, United Kingdom, Australia, which were the four countries in the dataset. The samples for non-U.S. countries were not included in other parts of the project's analysis, but the data showed opportunities for tech positions across borders for U.S. candidates.
 
     ![Job Type Distribution by State]()
 
@@ -130,29 +139,29 @@ Postings for both associate and mid-senior level roles are listed predominantly 
 
 * Prophet Predictions:
 
-    ![Increased Employment and Professional Education in tech fields.]() 
+    <div align='center'>
+    <img src='https://github.com/N8sGit/ai_project_group_8/blob/b3d75beacb9e5f9c2f56826c552efd698445b895/exported_plots/comp_tech_v_profedu_predict.png' height='300' title='AI Jobs'(image courtesy of....)' alt='Image description'/>
+
+*Image Label[^1]
+
+<div align='left'>
 
 *AI vs Non-AI Software Developers:* 
 
-Analysis of the job market for developers based on the job level showed that the demand for Associate level positions was almost identity for AI and non-AI dataset (15% vs. 14%). Notably, the demand for Mid-Senior positions was slightly lower for AI positions, which was supported by additional analysis showing ML roles, on average, less years of experience.
+* Analysis of the job market for developers based on the job level showed that the demand for Associate level positions was almost identity for AI and non-AI dataset (15% vs. 14%). Notably, the demand for Mid-Senior positions was slightly lower for AI positions, which was supported by additional analysis showing ML roles, on average, less years of experience.
 
-* The AI skills analysis resulted in Python the skill that is most desirable; however there was portion of the dataset that required ML experience but did not include Python as a required skill. The comparative bar chart for skills required for ML jobs versus skills required for non-ML job revealed in-demand software skills like Python, Java, AWS, Javascript, and SQL appeared at the top of both datasets. As previously stated, the demand for Python was slightly higher, but most skills shared between datasets appear with almost the same proportional frequency.
+* The AI skills analysis resulted in Python the skill that is most desirable especially for entry level AI positions; however there was portion of the dataset that required ML experience but did not include Python as a required skill. The comparative bar chart for skills required for ML jobs versus skills required for non-ML job revealed in-demand software skills like Python, Java, AWS, Javascript, and SQL appeared at the top of both datasets. As previously stated, the demand for Python was slightly higher, but most skills shared between datasets appear with almost the same proportional frequency.
 
     ![AI Skills Demand]() 
 
     ![AI vs Non-AI Top 20 Skills]() 
 
-* The relative comparison of job postings with ML experience to the those without produced the following results: 10% of the postings in LinkeIn 90% of postings in the LinkedIn dataset included ML experienc, resulting in the 10% in the job 
-
-* Most AI jobs are in .... and require the foollowing skillset 
+* Geographical analysis of tech jobs in general showed California had the most job listings by a wide margin (about x2 its nearest competitor Texas), which is expected considering that it is the traditional tech hub for the US. The healthy showing of job listings in Texas and Florida might be attributed to the generous tax breaks and business friendly environment. When perfoming a deeper analysis to reflect AI vs non-AI jobs by State, California showed a much greater proportion of AI jobs than non-AI jobs. Massachusetts had the second largest count, with the data also showing a greater proportion of AI jobs. Trends were similar for Washington. A possible conjecture for this job distribution data is that MA is a major research hub state, resulting in a higher demand for ML engineers.
+The greater proportion of ML roles in WA could be explained by the presence of Microsoft and Amazon, with both companies playing in integral role in the growth and evolution of AI. 
     
-    ![Tech Jobs by US State]() -
+    ![Tech Jobs by US State]()
     
-    ![AI vs Non-AI Job Distribution]() 
-
-   
-
-
+    ![AI vs Non-AI Job Distribution]()
 
 ### Lingering Questions
  * To explore later: AI in manufacturing jobs, more job level granularity.
@@ -173,10 +182,9 @@ The data analysis of unemployment trends did yield an inverse relationship to th
 
 * Summarize the project, include limitations, repeat thesis, discuss what was proven and what requires further analysis.
 
-## Workpapers in GitHub
-
 **Visualizations Format:** <img src='' title='AI Skills' alt='A display of 6-8 AI related visualizations.'/>
 
 ## References/Footnotes
 
-[^1]: [AI vs ML Definition](https://www.simplilearn.com/rise-of-ai-and-machine-learning-job-trends-article)
+[^1]: https://www.pexels.com/photo/data-codes-through-eyeglasses-577585/
+[^2]: [AI vs ML Definition](https://www.simplilearn.com/rise-of-ai-and-machine-learning-job-trends-article)
